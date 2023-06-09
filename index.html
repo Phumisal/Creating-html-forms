@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=for, initial-scale=1.0" />
+    <title>Creating html forms</title>
+    <!--For creating the frontend of a form using just html-->
+  </head>
+  <body>
+    <!--forms are used with the <input> tag to add input fields, <label></label>, <select></select> used to select 
+    options using the <option></option> tags and the <textarea></textarea> tags, the <button> tag is used to submit the form -->
+
+    <form>
+      <label for="name">Name</label><br />
+      <input type="text" placeholder="username" required /> <br />
+      <label for="name">Email</label><br />
+      <input type="email" placeholder="email address" required /> <br />
+      <label for="name">Password</label><br />
+      <input type="password" placeholder="password" required /> <br />
+
+      <!--add radio buttons-->
+
+      <label>Gender</label><br />
+      <input type="radio" name="gender" checked /><label for="">Male</label>
+      <input type="radio" name="gender" /><label for="">Female</label> <br />
+
+      <!--add checkbox-->
+      <input type="checkbox" /><label for=""
+        >I <strong>Accept </strong> the Terms and <em>Conditions</em></label
+      >
+      <br />
+      <!--Text Area-->
+      <label for="message">Message</label> <br />
+      <textarea
+        name="textarea"
+        id=""
+        cols="30"
+        rows="10"
+        placeholder="Tell us about yourself"
+      ></textarea
+      ><br />
+
+      <!--Uploading a File-->
+
+      <label for="uploading a file">Upload File</label><br />
+      <input type="file" /><br />
+      <!--Dropdown Menu-->
+      <label for="">Select Courses</label><br />
+      <select>
+        <option value="">HTML:5 for Beginners</option>
+        <option value="">CSS for Beginners</option>
+        <option value="">JavaScript for Beginners</option>
+        <option value="">Advanced CSS</option>
+        <option value="">Web Development</option></select
+      ><br />
+      <br /><br />
+      <!--There are two ways to Add a button to your page 
+    i) Using the input field and ii) using the 'button' tag i.e.
+      <input type="submit" value="Submit" />-->
+
+      <button type="submit">submit</button>
+      <button type="reset">reset</button>
+    </form>
+  </body>
+</html>
